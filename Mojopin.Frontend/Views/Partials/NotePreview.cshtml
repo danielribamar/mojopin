@@ -1,0 +1,16 @@
+﻿@model IPublishedContent
+@using System.Globalization
+@{
+    var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
+    var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
+    var date = Model.GetPropertyValue<DateTime>("contentDate");
+}
+<div class="post-preview" style="padding-top:8px;width:50%;">
+    <h1 class="post-title" style="color:#deb887;">@Model.Name</h1>
+    @Html.Raw(Model.GetPropertyValue("contentDescription"))
+
+    <p class="post-meta" style="align-self: center; padding-top: 20px">
+        @date.ToString("dd MMMMMMMMM, yyyy hh:mm", CultureInfo.GetCultureInfoByIetfLanguageTag("pt"))
+    </p>
+    <hr>
+</div>

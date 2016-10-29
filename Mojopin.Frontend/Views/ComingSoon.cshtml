@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var title = Model.Content.GetPropertyValue("contentTitle");
+    var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
+}
+<header class="intro-header" style="background-image: url('@Model.Content.GetPropertyValue("contentHeaderImage")'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1 class="title" style="padding-bottom: 40px">
+                        @title
+                    </h1>
+                    <span style="font: 100 40px/0.8 'Great Vibes', Helvetica, sans-serif;">
+                        by Filipa Galrão
+                    </span>
+                    @if (!string.IsNullOrEmpty(subtitle))
+                    {
+                        <hr class="small">
+                    }
+                    <span class="subheading">@Html.Raw(subtitle)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

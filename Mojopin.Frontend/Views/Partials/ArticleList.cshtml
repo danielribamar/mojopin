@@ -1,0 +1,29 @@
+﻿@using System.Globalization
+@using umbraco.MacroEngines;
+@using umbraco.NodeFactory
+@model IEnumerable<IPublishedContent>
+@{
+    var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
+}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        @foreach (var item in Model)
+        {
+            switch (item.DocumentTypeAlias)
+            {
+                case "Note":
+                    @Html.Partial("NotePreview", item)
+                    break;
+                case "Article":
+                    @Html.Partial("ArticlePreview", item)
+                    break;
+            }
+        }
+        <!-- Pager -->
+        <ul class="pager">
+            <li class="next">
+                <a class="vermais" href="#">ver mais &rarr;</a>
+            </li>
+        </ul>
+    </div>
+</div>

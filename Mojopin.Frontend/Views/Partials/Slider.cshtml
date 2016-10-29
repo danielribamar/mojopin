@@ -1,0 +1,16 @@
+﻿@using umbraco.MacroEngines
+@model List<String>
+@{
+    Layout = null;
+    var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
+}
+<h1>OWL</h1>
+<div class="owl-carousel">
+    @foreach (var item in Model)
+    {
+        var node = new DynamicNode(int.Parse(item));
+
+        <div class="item"><h4 style="color:black">@node.Name</h4></div>
+
+    }
+</div>
