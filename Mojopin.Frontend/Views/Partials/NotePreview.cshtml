@@ -5,12 +5,12 @@
     var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
     var date = Model.GetPropertyValue<DateTime>("contentDate");
 }
-<div class="post-preview" style="padding-top:8px;width:50%;">
-    <h1 class="post-title" style="color:#deb887;">@Model.Name</h1>
+<div class="post-preview" style="padding-top:8px;">
+    <h1 class="post-title" style="font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;color:#deb887">@Model.GetPropertyValue("contentTitle")</h1>
     @Html.Raw(Model.GetPropertyValue("contentDescription"))
 
     <p class="post-meta" style="align-self: center; padding-top: 20px">
-        @date.ToString("dd MMMMMMMMM, yyyy hh:mm", CultureInfo.GetCultureInfoByIetfLanguageTag("pt"))
+        @date.ToString("dd MMMMMMMMM, yyyy HH:mm", CultureInfo.GetCultureInfoByIetfLanguageTag("pt"))
     </p>
     <hr>
 </div>

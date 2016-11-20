@@ -740,6 +740,12 @@
     <Folder Include="Sources\fonts\" />
     <Folder Include="Sources\js\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mojopin.Core\Mojopin.Core.csproj">
+      <Project>{d250e148-6804-47a3-9f20-d7c89decf3a6}</Project>
+      <Name>Mojopin.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

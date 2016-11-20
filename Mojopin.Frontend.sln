@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mojopin.Frontend", "Mojopin.Frontend\Mojopin.Frontend.csproj", "{C51FFC6A-7C37-492A-B58A-643D4DACB30B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mojopin.Core", "Mojopin.Core\Mojopin.Core.csproj", "{D250E148-6804-47A3-9F20-D7C89DECF3A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C51FFC6A-7C37-492A-B58A-643D4DACB30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51FFC6A-7C37-492A-B58A-643D4DACB30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51FFC6A-7C37-492A-B58A-643D4DACB30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D250E148-6804-47A3-9F20-D7C89DECF3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D250E148-6804-47A3-9F20-D7C89DECF3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D250E148-6804-47A3-9F20-D7C89DECF3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D250E148-6804-47A3-9F20-D7C89DECF3A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
