@@ -369,6 +369,7 @@
     <Content Include="Views\Partials\InstagramFeed.cshtml" />
     <Content Include="Views\Partials\NotePreview.cshtml" />
     <Content Include="Views\Partials\Slider.cshtml" />
+    <Content Include="Views\MacroPartials\Video.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

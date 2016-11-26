@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+    var umbracoHelper = new UmbracoHelper(Umbraco.UmbracoContext);
+
+    var video = umbracoHelper.TypedMedia(Model.MacroParameters["video"]);
+
+    if (video == null)
+    {
+        return;
+    }
+}
+
+<div align="center" class="embed-responsive embed-responsive-16by9">
+    <video controls class="embed-responsive-item">
+        <source src="@video.Url" type="video/mp4">
+    </video>
+</div>
