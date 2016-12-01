@@ -313,7 +313,13 @@
     <Content Include="media\1344\img_6725.png" />
     <Content Include="media\1344\img_6725_big-thumb.jpg" />
     <Content Include="media\1344\img_6725_thumb.jpg" />
+    <Content Include="Sources\css\bootstrap.css" />
+    <Content Include="Sources\css\bootstrap.min.css" />
+    <Content Include="Sources\css\clean-blog.css" />
+    <Content Include="Sources\css\clean-blog.min.css" />
+    <Content Include="Sources\css\Custom.css" />
     <Content Include="Sources\favicon.png" />
+    <Content Include="Sources\images\search.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -737,7 +743,6 @@
     <Folder Include="media\1356\" />
     <Folder Include="media\1357\" />
     <Folder Include="media\1358\" />
-    <Folder Include="Sources\css\" />
     <Folder Include="Sources\fonts\" />
     <Folder Include="Sources\js\" />
   </ItemGroup>

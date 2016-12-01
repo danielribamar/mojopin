@@ -24,6 +24,7 @@ p {
     color: white;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
 }
+
 h1,
 h2,
 h3,
@@ -162,14 +163,22 @@ hr.small {
 }
 
 .intro-header {
-    background-color: #808080;
+    /*background-color: #808080;
     background: no-repeat center center;
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 50px;*/
+    width: 100%;
+    height: 0;
+    padding: 0 0 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     .intro-header .site-heading,

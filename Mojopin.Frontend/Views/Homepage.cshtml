@@ -12,10 +12,11 @@
     var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url;
 
 }
+
 <header class="intro-header" style="background-image: url('@media'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-10 col-lg-offset-5 col-md-12 col-md-offset-1">
                 <div class="site-heading">
                     <h1 class="title" style="color: @titleColor">
                         @title
@@ -34,7 +35,9 @@
             </div>
         </div>
     </div>
+
 </header>
+
 
 @if (!MobileHelper.IsMobileDevice(Request.UserAgent))
 {
