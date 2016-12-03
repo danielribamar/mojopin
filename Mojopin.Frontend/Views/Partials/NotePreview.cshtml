@@ -1,16 +1,16 @@
-﻿@model IPublishedContent
+﻿@model Mojopin.Frontend.Models.ItemPreview
 @using System.Globalization
 @{
     var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
     var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
-    var date = Model.GetPropertyValue<DateTime>("contentDate");
+    
 }
 <div class="post-preview" style="padding-top:8px;">
-    <h1 class="post-title" style="font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;color:#deb887">@Model.GetPropertyValue("contentTitle")</h1>
-    @Html.Raw(Model.GetPropertyValue("contentDescription"))
+    <h1 class="post-title" style="font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;color:#deb887">@Model.Title</h1>
+    @Html.Raw(Model.Description)
 
     <p class="post-meta" style="align-self: center; padding-top: 20px">
-        @date.ToString("dd MMMMMMMMM, yyyy HH:mm", CultureInfo.GetCultureInfoByIetfLanguageTag("pt"))
+      @Model.DateFormatted
     </p>
     <hr>
 </div>

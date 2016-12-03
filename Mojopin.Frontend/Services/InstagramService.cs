@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Web;
 using System.Web.Script.Serialization;
 
 namespace MojoPin.Frontend.Services
@@ -14,6 +13,7 @@ namespace MojoPin.Frontend.Services
         private string GetRecentMediaUrl = "https://api.instagram.com/v1/users/{0}/media/recent/?access_token={1}";
         private string AccessToken = "21905669.e6a976d.266994125d6a4820b10a8379a4984632";
         private string UserId = "21905669";
+
         public List<InstragramMediaModel> GetMedia(int numberOfItems)
         {
             var list = new List<InstragramMediaModel>();

@@ -1,45 +1,30 @@
-﻿@model IPublishedContent
-@using System.Globalization
-@using umbraco.MacroEngines;
+﻿@model Mojopin.Frontend.Models.ItemPreview
 @using umbraco.NodeFactory
-@{
-    var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
-    var article = Model;
-    var id = article.GetPropertyValue("contentThumbnail");
-
-    var date = article.GetPropertyValue<DateTime>("contentDate");
-}
 
 <div class="post-preview">
-    <a href="@article.Url">
+    <a href="@Model.Url">
         <h2 class="post-title">
-            @article.GetPropertyValue("contentTitle")
+            @Model.Title
         </h2>
         <h3 class="post-subtitle">
-            @Html.Raw(article.GetPropertyValue("contentSubtitle"))
+            @Model.Subtitle
         </h3>
     </a>
 
-    @if (!string.IsNullOrEmpty(article.GetPropertyValue<string>("contentThumbnailVideo")))
+    @if (!string.IsNullOrEmpty(Model.ThumnailVideoUrl))
     {
-        <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@article.GetPropertyValue("contentThumbnailVideo")" frameborder="0" allowfullscreen="0"></iframe>
+        <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
     }
-    else if (id != null)
+    else if (Model.ThumbnailImageUrl != null)
     {
-        var media = umbracoHelper.TypedMedia(id);
-        <img style="max-width: 100%" src="@media.GetCropUrl(1366, 768)" />
-
-    }
-    else
-    {
-        <img style="max-width: 100%" src="@umbracoHelper.TypedMedia(article.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(500,500)" />
+        <img style="max-width: 100%" src="@Model.ThumbnailImageUrl" />
     }
     <p class="post-meta" style="align-self: center; padding-top: 20px">
         @if (Node.GetCurrent().NodeTypeAlias.Equals("Homepage"))
             {
-            <a href="@article.Parent.Url">@article.Parent.Name</a>
+            <a href="@Model.ParentUrl">@Model.ParentName</a>
         }
-        @date.ToString("dd MMMMMMMMM, yyyy", CultureInfo.GetCultureInfoByIetfLanguageTag("pt"))
+        @Model.DateFormatted
     </p>
     <hr>
 </div>

@@ -1,22 +1,21 @@
 ﻿@using MojoPin.Frontend.Helpers
 @using Umbraco.Web.Models
+@using Mojopin.Frontend.Services
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "HeaderAndFooter.cshtml";
     var title = Model.Content.GetPropertyValue("contentTitle");
     var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
-
     var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
-
-    //var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(1366, 768);
     var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url;
 
+    var searchService = new SearchService();
+    var items = searchService.FeedSearch(1, 1);
 }
-
 <header class="intro-header" style="background-image: url('@media'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-5 col-md-12 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1 class="title" style="color: @titleColor">
                         @title
@@ -35,9 +34,7 @@
             </div>
         </div>
     </div>
-
 </header>
-
 
 @if (!MobileHelper.IsMobileDevice(Request.UserAgent))
 {
@@ -50,10 +47,7 @@
 
     @*@Html.Partial("Slider", Model.Content.GetPropertyValue<string>("highlightArticles").Split(',').ToList())*@
 
-    @Html.Partial("ArticleList", Model.Content.Parent.Descendants().Where(p => p.DocumentTypeAlias.Equals("Article") || p.DocumentTypeAlias.Equals("Note")).OrderByDescending(p => p.GetPropertyValue<DateTime>("contentDate")))
+    @Html.Partial("ArticleList", items)
 
     @Html.Partial("InstagramFeed")
-</div>
-<div style="float: left;width: 15%">
-    <div style="display: none" class="fb-page" data-href="https://www.facebook.com/filipagalrao" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/filipagalrao"><a href="https://www.facebook.com/filipagalrao">Filipa Galrão</a></blockquote></div></div>
 </div>

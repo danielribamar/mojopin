@@ -1,15 +1,21 @@
 ﻿$(document).ready(function () {
 
-
     console.log('INIT');
-    $('.post-preview:gt(4)').hide().filter(":last");
-    var a = $('.next');
-    if ($('.post-preview:not(:visible)').length == 0) $(a).remove();
-    $(a).click(function () {
-        $('.post-preview:not(:visible):lt(5)').fadeIn(function () {
-            if ($('.post-preview:not(:visible)').length == 0) $(a).remove();
+
+    $('.vermais').click(function (event) {
+        event.preventDefault();
+
+        var e = $('.vermais');
+
+        var page = $(e).data("page");
+        console.log('get page ' + page);
+
+        $.ajax({
+            url: "/umbraco/api/Search/GetFeed/" + page,
+            type: 'GET',
+            success: function (result) {
+                console.log(result);
+            }
         });
-        return false;
     });
-    //);
 });
