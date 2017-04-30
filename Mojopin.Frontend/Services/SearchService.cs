@@ -1,5 +1,4 @@
-﻿using Examine;
-using Examine.LuceneEngine.SearchCriteria;
+﻿using Examine.LuceneEngine.SearchCriteria;
 using Mojopin.Frontend.Models;
 using System;
 using System.Collections.Generic;
@@ -14,7 +13,7 @@ namespace Mojopin.Frontend.Services
     {
         private UmbracoHelper umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
 
-        public List<ItemPreview> FeedSearch(int page, int numberOfItems)
+        public List<ItemPreview> FeedSearch(int page, int numberOfItems, int categoryId = 0)
         {
             var results = new List<ItemPreview>();
 
@@ -31,17 +30,21 @@ namespace Mojopin.Frontend.Services
             //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
             var searchResults = umbracoHelper.TypedSearch(query.Compile()).OrderByDescending(x => x.CreateDate);
             //Printing the results
-            foreach (var item in searchResults.Skip(numberOfItems * (page - 1)).Take(numberOfItems).ToList())
+            foreach (var item in searchResults)
             {
                 switch (item.DocumentTypeAlias)
                 {
                     case "Note":
                     case "Article":
-                        results.Add(ConvertToItem(item));
+                        var itemPreview = ConvertToItem(item);
+                        if (categoryId == 0 || itemPreview.ParentId == categoryId)
+                        {
+                            results.Add(itemPreview);
+                        }
                         break;
                 }
             }
-            return results;
+            return results.Skip(numberOfItems * (page - 1)).Take(numberOfItems).ToList();
         }
 
         private ItemPreview ConvertToItem(IPublishedContent result)
@@ -51,6 +54,7 @@ namespace Mojopin.Frontend.Services
             item.NodeTypeAlias = result.DocumentTypeAlias;
             item.ParentName = result.Parent.Name;
             item.ParentUrl = result.Parent.Url;
+            item.ParentId = result.Parent.Id;
             item.Url = result.Url;
             if (result.HasProperty("contentTitle") && result.HasValue("contentTitle"))
             {
@@ -66,11 +70,17 @@ namespace Mojopin.Frontend.Services
             }
             if (result.HasProperty("contentThumbnail") && result.HasValue("contentThumbnail"))
             {
-                item.ThumbnailImageUrl = umbracoHelper.TypedMedia(result.GetPropertyValue("contentThumbnail")).Url;
+                item.ThumbnailImageUrl = string.Format("{0}&bgcolor=FFF",umbracoHelper.TypedMedia(result.GetPropertyValue("contentThumbnail"))
+                    .GetCropUrl(750, 400,
+                    quality: 100,
+                    imageCropAnchor: Umbraco.Web.Models.ImageCropAnchor.Center,
+                    imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop
+                    ));
+
             }
             if (result.HasProperty("contentThumbnailVideo") && result.HasValue("contentThumbnailVideo"))
             {
-                item.ThumnailVideoUrl = result.GetPropertyValue<string>("contentThumbnailVideo");
+                item.ThumbnailVideoUrl = result.GetPropertyValue<string>("contentThumbnailVideo");
             }
             if (result.HasProperty("contentDate") && result.HasValue("contentDate"))
             {

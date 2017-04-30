@@ -77,19 +77,19 @@
     </script>
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script>
+    @*<div id="fb-root"></div>*@
+    @*<script>
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=@facebookAppId";
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));</script>*@
     @RenderBody()
 
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="/Sources/js/main.js"></script>
+    <script src="/Sources/js/main.js?v=2000"></script>
 
 </body>
 </html>

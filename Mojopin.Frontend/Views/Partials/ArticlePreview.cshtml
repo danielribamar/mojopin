@@ -11,9 +11,9 @@
         </h3>
     </a>
 
-    @if (!string.IsNullOrEmpty(Model.ThumnailVideoUrl))
+    @if (!string.IsNullOrEmpty(Model.ThumbnailVideoUrl))
     {
-        <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
+        <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumbnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
     }
     else if (Model.ThumbnailImageUrl != null)
     {
@@ -24,7 +24,7 @@
             {
             <a href="@Model.ParentUrl">@Model.ParentName</a>
         }
-        @Model.DateFormatted
+        <span>@Model.DateFormatted</span>
     </p>
     <hr>
 </div>

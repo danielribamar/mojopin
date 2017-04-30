@@ -309,6 +309,7 @@
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
     <Content Include="default.aspx" />
+    <Content Include="FacebookShareGateway.aspx" />
     <Content Include="Global.asax" />
     <Content Include="media\1344\img_6725.png" />
     <Content Include="media\1344\img_6725_big-thumb.jpg" />
@@ -332,6 +333,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="FacebookShareGateway.aspx.cs">
+      <DependentUpon>FacebookShareGateway.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacebookShareGateway.aspx.designer.cs">
+      <DependentUpon>FacebookShareGateway.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -343,6 +351,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\InstagramService.cs" />
     <Compile Include="Services\SearchService.cs" />
+    <Compile Include="UmbracoEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -385,6 +394,7 @@
     <Content Include="Views\Partials\NotePreview.cshtml" />
     <Content Include="Views\Partials\Slider.cshtml" />
     <Content Include="Views\MacroPartials\Video.cshtml" />
+    <None Include="Properties\PublishProfiles\mojopin filesystem.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -393,7 +403,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="media\1001\" />
     <Folder Include="media\1002\" />
     <Folder Include="media\1003\" />

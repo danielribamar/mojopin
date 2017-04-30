@@ -22,9 +22,9 @@ namespace Mojopin.Frontend.Controllers
         }
 
         [HttpGet]
-        public HttpResponseMessage GetFeed(int id)
+        public HttpResponseMessage GetFeed(int id, int cid)
         {
-            var results = searchService.FeedSearch(id, 1);
+            var results = searchService.FeedSearch(id, 5, cid);
             return Request.CreateResponse(HttpStatusCode.OK, results);
         }
     }

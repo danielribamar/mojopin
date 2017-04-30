@@ -10,7 +10,7 @@
     var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url;
 
     var searchService = new SearchService();
-    var items = searchService.FeedSearch(1, 1);
+    var items = searchService.FeedSearch(1, 5);
 }
 <header class="intro-header" style="background-image: url('@media'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
     <div class="container">
@@ -38,9 +38,9 @@
 
 @if (!MobileHelper.IsMobileDevice(Request.UserAgent))
 {
-    <div style="width: 15%; float: right; margin-left: 20px; margin-right: 10px; position: fixed; padding-top: 35px;z-index: -1">
-        <div class="fb-page" data-href="https://www.facebook.com/filipagalrao" @*data-tabs="timeline"*@ data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/filipagalrao"><a href="https://www.facebook.com/filipagalrao">loading...</a></blockquote></div></div>
-    </div>
+    @*<div style="width: 15%; float: right; margin-left: 20px; margin-right: 10px; position: fixed; padding-top: 35px;z-index: -1">
+        <div class="fb-page" data-href="https://www.facebook.com/filipagalrao" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/filipagalrao"><a href="https://www.facebook.com/filipagalrao">loading...</a></blockquote></div></div>
+    </div>*@
 }
 
 <div class="container" style="padding-bottom: 50px">

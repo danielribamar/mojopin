@@ -1,4 +1,5 @@
 ﻿@using Umbraco.Web.Models
+@using Mojopin.Frontend.Services
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "HeaderAndFooter.cshtml";
@@ -6,6 +7,8 @@
     var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
 
     //var background = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(1366, 768, imageCropMode: ImageCropMode.Crop);
+    var searchService = new SearchService();
+    var items = searchService.FeedSearch(1, 5, Model.Content.Id);
 
     var background = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url();
 }
@@ -15,18 +18,18 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1 class="title">@Model.Content.Name</h1>
-                        @if (!string.IsNullOrEmpty(subtitle))
-                        {
-                            <hr class="small">
-                        }
+                    @if (!string.IsNullOrEmpty(subtitle))
+                    {
+                        <hr class="small">
+                    }
                     <span class="subheading">@Html.Raw(subtitle)</span>
                     <br /><br /><br /><br /><br />
-                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <div class="container">
-        @Html.Partial("ArticleList", Model.Content.Children.Where(p => p.DocumentTypeAlias.Equals("Article")).OrderByDescending(p => p.GetPropertyValue<DateTime>("contentDate")))
     </div>
+</header>
+
+<div class="container">
+    @Html.Partial("ArticleList", items)
+</div>

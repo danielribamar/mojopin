@@ -2,11 +2,12 @@
 @using Mojopin.Frontend.Services;
 @model IEnumerable<Mojopin.Frontend.Models.ItemPreview>
 @{
-
+    var currentNode = uQuery.GetCurrentNode();
+    var category = currentNode.NodeTypeAlias.Equals("Category") ? currentNode.Id : 0;
 }
 <div class="row">
-    <div id="feed" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h1>@Model.Count()</h1>
+    <div id="feed" class="col-lg-8 col-md-10 ">
+
         @foreach (var item in Model)
         {
             switch (item.NodeTypeAlias)
@@ -20,9 +21,16 @@
             }
         }
         <!-- Pager -->
+
+    </div>
+    <div id="feed" class="col-lg-2">
+        @Html.Partial("InstagramFeed")
+    </div>
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
         <ul class="pager">
             <li class="next">
-                <a class="vermais" data-page="1" href="#">ver mais &rarr;</a>
+                <a class="vermais" data-page="2" data-category="@category" href="#">ver mais &rarr;</a>
             </li>
         </ul>
     </div>
