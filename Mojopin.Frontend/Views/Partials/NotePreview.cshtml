@@ -3,7 +3,7 @@
 @{
     var umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
     var currentNode = UmbracoContext.Current.PublishedContentRequest.PublishedContent;
-    
+    var current = umbracoHelper.TypedContent(Model.NodeId);
 }
 <div class="post-preview" style="padding-top:8px;">
     <h1 class="post-title" style="font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;color:#deb887">@Model.Title</h1>
@@ -13,4 +13,5 @@
       @Model.DateFormatted
     </p>
     <hr>
+   
 </div>

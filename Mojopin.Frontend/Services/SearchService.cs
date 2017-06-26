@@ -20,18 +20,16 @@ namespace Mojopin.Frontend.Services
             //Fetching our SearchProvider by giving it the name of our searchprovider
             var Searcher = Examine.ExamineManager.Instance.SearchProviderCollection["MySearchSearcher"];
 
-            var searchCriteria = Searcher.CreateSearchCriteria(Examine.SearchCriteria.BooleanOperation.Or);
-            var query = searchCriteria
-                .Field("nodeTypeAlias", "Article".Boost(2)).Or()
-                .Field("nodeTypeAlias", "Article".Fuzzy(0.5f)).Or()
-                .Field("nodeTypeAlias", "Note".Boost(2)).Or()
-                .Field("nodeTypeAlias", "Note".Fuzzy(0.5f));
-
+            var searchCriteria = Searcher.CreateSearchCriteria();
+            var searchFields = new[] { "nodeTypeAlias" };
+            var searchTerms = new[] { "article","note" };
+            var query = searchCriteria.GroupedOr(searchFields, searchTerms.ToArray()).Compile();
+            var searchResults=Searcher.Search(query);
             //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
-            var searchResults = umbracoHelper.TypedSearch(query.Compile()).OrderByDescending(x => x.CreateDate);
-            //Printing the results
-            foreach (var item in searchResults)
+             //Printing the results
+            foreach (var item in searchResults.Select(p=> umbracoHelper.TypedContent(p.Id)).OrderByDescending(p=>p.CreateDate).ToList())
             {
+               
                 switch (item.DocumentTypeAlias)
                 {
                     case "Note":

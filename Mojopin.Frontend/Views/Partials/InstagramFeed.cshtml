@@ -1,4 +1,4 @@
-﻿@*@inherits Umbraco.Web.Mvc.UmbracoTemplatePage*@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     var instagramService = new MojoPin.Frontend.Services.InstagramService();
     var items = instagramService.GetMedia(12);
@@ -24,7 +24,7 @@
         margin: 5px;
         border: 1px solid #fff;
         float: left;
-        width: 40%;
+        width: 15%;
     }
 
         div.img:hover {

@@ -16,12 +16,10 @@ namespace Mojopin.Frontend
 
         private void ContentService_Published(IPublishingStrategy sender, PublishEventArgs<IContent> args)
         {
-            var contentService = new ContentService();
             foreach (var node in args.PublishedEntities.Where(p => p.HasProperty("shareUrl")))
             {
-                
                 node.SetValue("shareUrl", $"http://mojopin.pt/FacebookShareGateway.aspx?pid={node.Id}");
-                ContentService.Publish(node);
+                ApplicationContext.Current.Services.ContentService.Publish(node);
             }
         }
     }
