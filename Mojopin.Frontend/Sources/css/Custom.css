@@ -4,3 +4,30 @@
 .Img-Responsive {
     max-width: 100%;
 }
+.note a:hover {
+    text-decoration: none;
+  
+}
+    .note a:hover h1 {
+        font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;
+        color: #deb887;
+        
+        
+    }
+    .note a:hover div {
+    
+    }
+
+.note a h1{
+    font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #deb887
+}
+
+.highlight {
+    border-top: 6px solid #fff;
+}
+
+    .highlight:hover {
+        border-top: 6px solid #deb887;
+        cursor: pointer !important;
+    }

@@ -1,0 +1,27 @@
+﻿@model List<IPublishedContent>
+@{
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+}
+
+<div class="row">
+    @*<div class="col-md-12" style="display: inline-block">*@
+    <div class="col-md-12">
+        @*<h3 class="post-preview">Posts em destaque</h3>*@
+        <div class="row">
+            @foreach (var highlight in Model)
+            {
+
+                var mediaId = highlight.GetPropertyValue("contentThumbnail");
+                var media = umbracoHelper.TypedMedia(mediaId);
+                <a style="font: 100 30px/0.5 'Great Vibes', Helvetica, sans-serif;color:#deb887;cursor: pointer;" href="@highlight.Url">
+                    <div class="col-md-3 col-sm-12" style="text-align:center;padding-bottom:20px;">
+                        <img class="highlight" src="@media.GetCropUrl(null,400,imageCropMode:Umbraco.Web.Models.ImageCropMode.Max)" />
+
+                        <span>@highlight.GetPropertyValue("contentTitle")</span>
+
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>

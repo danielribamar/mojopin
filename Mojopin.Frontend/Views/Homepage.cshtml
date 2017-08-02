@@ -4,6 +4,7 @@
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "HeaderAndFooter.cshtml";
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
     var title = Model.Content.GetPropertyValue("contentTitle");
     var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
     var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
@@ -45,7 +46,8 @@
 
 <div class="container" style="padding-bottom: 50px">
 
-    @*@Html.Partial("Slider", Model.Content.GetPropertyValue<string>("highlightArticles").Split(',').ToList())*@
+    @Html.Partial("Highlights", 
+    Model.Content.GetPropertyValue<string>("highlightArticles").Split(',').ToList().Select(p=>umbracoHelper.TypedContent(p)).ToList())
 
     @Html.Partial("ArticleList", items)
 

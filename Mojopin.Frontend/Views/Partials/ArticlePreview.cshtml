@@ -17,7 +17,7 @@
     }
     else if (Model.ThumbnailImageUrl != null)
     {
-        <img style="max-width: 100%" src="@Model.ThumbnailImageUrl" />
+        <img class="highlight" style="max-width: 100%" src="@Model.ThumbnailImageUrl" />
     }
     <p class="post-meta" style="align-self: center; padding-top: 20px">
         @if (Node.GetCurrent().NodeTypeAlias.Equals("Homepage"))

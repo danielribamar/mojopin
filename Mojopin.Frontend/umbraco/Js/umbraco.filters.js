@@ -1,12 +1,54 @@
 /*! umbraco
  * https://github.com/umbraco/umbraco-cms/
- * Copyright (c) 2015 Umbraco HQ;
- * Licensed MIT
+ * Copyright (c) 2017 Umbraco HQ;
+ * Licensed 
  */
 
 (function() { 
 
 angular.module('umbraco.filters', []);
+angular.module("umbraco.filters")
+    .filter('compareArrays', function() {
+        return function inArray(array, compareArray, compareProperty) {
+
+            var result = [];
+
+            angular.forEach(array, function(arrayItem){
+
+                var exists = false;
+
+                angular.forEach(compareArray, function(compareItem){
+                    if( arrayItem[compareProperty] === compareItem[compareProperty]) {
+                        exists = true;
+                    }
+                });
+
+                if(!exists) {
+                    result.push(arrayItem);
+                }
+
+            });
+
+            return result;
+
+        };
+});
+
+/**
+* @ngdoc filter
+* @name umbraco.filters.preserveNewLineInHtml
+* @description 
+* Used when rendering a string as HTML (i.e. with ng-bind-html) to convert line-breaks to <br /> tags
+**/
+angular.module("umbraco.filters").filter('preserveNewLineInHtml', function () {
+  return function (text) {
+	if (!text) {
+		return '';
+	}
+    return text.replace(/\n/g, '<br />');
+  };
+});
+	
 angular.module("umbraco.filters").filter('timespan', function() {
     return function(input) {
       var sec_num = parseInt(input, 10);

@@ -22,14 +22,14 @@ namespace Mojopin.Frontend.Services
 
             var searchCriteria = Searcher.CreateSearchCriteria();
             var searchFields = new[] { "nodeTypeAlias" };
-            var searchTerms = new[] { "article","note" };
+            var searchTerms = new[] { "article", "note" };
             var query = searchCriteria.GroupedOr(searchFields, searchTerms.ToArray()).Compile();
-            var searchResults=Searcher.Search(query);
+            var searchResults = Searcher.Search(query);
             //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
-             //Printing the results
-            foreach (var item in searchResults.Select(p=> umbracoHelper.TypedContent(p.Id)).OrderByDescending(p=>p.CreateDate).ToList())
+            //Printing the results
+            foreach (var item in searchResults.Select(p => umbracoHelper.TypedContent(p.Id)).OrderByDescending(p => p.CreateDate).ToList())
             {
-               
+
                 switch (item.DocumentTypeAlias)
                 {
                     case "Note":
@@ -68,13 +68,21 @@ namespace Mojopin.Frontend.Services
             }
             if (result.HasProperty("contentThumbnail") && result.HasValue("contentThumbnail"))
             {
-                item.ThumbnailImageUrl = string.Format("{0}&bgcolor=FFF",umbracoHelper.TypedMedia(result.GetPropertyValue("contentThumbnail"))
-                    .GetCropUrl(750, 400,
-                    quality: 100,
-                    imageCropAnchor: Umbraco.Web.Models.ImageCropAnchor.Center,
-                    imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop
-                    ));
+                var contentThumbnail = umbracoHelper.TypedMedia(result.GetPropertyValue("contentThumbnail"));
 
+                if (contentThumbnail == null)
+                {
+                    item.ThumbnailImageUrl = "";
+                }
+                else
+                {
+                    item.ThumbnailImageUrl = string.Format("{0}&bgcolor=FFF", contentThumbnail
+               .GetCropUrl(750, 400,
+               quality: 100,
+               imageCropAnchor: Umbraco.Web.Models.ImageCropAnchor.Center,
+               imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop
+               ));
+                }
             }
             if (result.HasProperty("contentThumbnailVideo") && result.HasValue("contentThumbnailVideo"))
             {

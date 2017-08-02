@@ -95,7 +95,7 @@
 
     function CreateNote(article) {
         var d = document.createElement("div");
-        d.className = "post-preview";
+        d.className = "post-preview text-center";
         d.style.paddingTop = "8px";
 
         var h2 = document.createElement("h2");

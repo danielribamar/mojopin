@@ -19,7 +19,8 @@ namespace Mojopin.Frontend
             foreach (var node in args.PublishedEntities.Where(p => p.HasProperty("shareUrl")))
             {
                 node.SetValue("shareUrl", $"http://mojopin.pt/FacebookShareGateway.aspx?pid={node.Id}");
-                ApplicationContext.Current.Services.ContentService.Publish(node);
+                ApplicationContext.Current.Services.ContentService.Save(node);
+                break;
             }
         }
     }

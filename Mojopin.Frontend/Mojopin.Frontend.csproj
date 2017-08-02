@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\UmbracoCms.7.3.4\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.3.4\build\UmbracoCms.props')" />
+  <Import Project="..\packages\UmbracoCms.7.6.4\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.6.4\build\UmbracoCms.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -44,73 +44,66 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="AutoMapper.Net4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
-    <Reference Include="businesslogic, Version=1.0.5820.25374, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\businesslogic.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="businesslogic, Version=1.0.6396.36624, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\businesslogic.dll</HintPath>
     </Reference>
-    <Reference Include="ClientDependency.Core, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ClientDependency.1.8.4\lib\net45\ClientDependency.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ClientDependency.Core, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency.1.9.2\lib\net45\ClientDependency.Core.dll</HintPath>
     </Reference>
     <Reference Include="ClientDependency.Core.Mvc, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClientDependency-Mvc5.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="cms, Version=1.0.5820.25376, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\cms.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="cms, Version=1.0.6396.36625, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\cms.dll</HintPath>
     </Reference>
-    <Reference Include="controls, Version=1.0.5820.25378, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\controls.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="controls, Version=1.0.6396.36629, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\controls.dll</HintPath>
     </Reference>
     <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
       <HintPath>..\packages\xmlrpcnet.2.5.0\lib\net20\CookComputing.XmlRpcV2.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Examine, Version=0.1.68.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Examine.0.1.68.0\lib\Examine.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Examine, Version=0.1.83.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Examine.0.1.83\lib\net45\Examine.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ImageProcessor, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ImageProcessor.2.3.0.0\lib\net45\ImageProcessor.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ImageProcessor, Version=2.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.5.3\lib\net45\ImageProcessor.dll</HintPath>
     </Reference>
-    <Reference Include="ImageProcessor.Web, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ImageProcessor.Web.4.4.0.0\lib\net45\ImageProcessor.Web.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ImageProcessor.Web, Version=4.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.Web.4.8.3\lib\net45\ImageProcessor.Web.dll</HintPath>
     </Reference>
-    <Reference Include="interfaces, Version=1.0.5820.25369, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\interfaces.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="interfaces, Version=1.0.6396.36619, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\log4net.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Log4Net.Async, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Log4Net.Async.2.0.4\lib\net40\Log4Net.Async.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MarkdownSharp, Version=1.14.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdown.1.14.7\lib\net45\MarkdownSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1559.20655, Culture=neutral">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\Microsoft.ApplicationBlocks.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -120,11 +113,25 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.2.1\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
@@ -157,9 +164,8 @@
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -169,17 +175,18 @@
       <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SQLCE4Umbraco, Version=1.0.5820.25377, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\SQLCE4Umbraco.dll</HintPath>
+    <Reference Include="SQLCE4Umbraco, Version=1.0.6396.36627, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\SQLCE4Umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\System.Data.SqlServerCe.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\System.Data.SqlServerCe.Entity.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\System.Data.SqlServerCe.Entity.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -191,6 +198,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Reflection.Metadata, Version=1.0.21.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.7.0\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -208,44 +223,37 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\TidyNet.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\TidyNet.dll</HintPath>
     </Reference>
-    <Reference Include="umbraco, Version=1.0.5820.25379, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\umbraco.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="umbraco, Version=1.0.6396.36631, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\umbraco.dll</HintPath>
     </Reference>
-    <Reference Include="Umbraco.Core, Version=1.0.5820.25371, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\Umbraco.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Umbraco.Core, Version=1.0.6396.36621, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\Umbraco.Core.dll</HintPath>
     </Reference>
-    <Reference Include="umbraco.DataLayer, Version=1.0.5820.25373, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\umbraco.DataLayer.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="umbraco.DataLayer, Version=1.0.6396.36624, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\umbraco.DataLayer.dll</HintPath>
     </Reference>
-    <Reference Include="umbraco.editorControls, Version=1.0.5820.25381, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\umbraco.editorControls.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="umbraco.editorControls, Version=1.0.6396.36634, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\umbraco.editorControls.dll</HintPath>
     </Reference>
-    <Reference Include="umbraco.MacroEngines, Version=1.0.5820.25381, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\umbraco.MacroEngines.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="umbraco.MacroEngines, Version=1.0.6396.36635, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\umbraco.MacroEngines.dll</HintPath>
     </Reference>
-    <Reference Include="umbraco.providers, Version=1.0.5820.25378, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\umbraco.providers.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Umbraco.ModelsBuilder.3.0.7\lib\Umbraco.ModelsBuilder.dll</HintPath>
     </Reference>
-    <Reference Include="Umbraco.Web.UI, Version=1.0.5820.25382, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\Umbraco.Web.UI.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="umbraco.providers, Version=1.0.6396.36630, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\umbraco.providers.dll</HintPath>
     </Reference>
-    <Reference Include="UmbracoExamine, Version=0.7.0.25377, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\UmbracoExamine.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Umbraco.Web.UI, Version=1.0.6396.36637, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\Umbraco.Web.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.7.3.4\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="UmbracoExamine, Version=0.7.0.36626, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\UmbracoExamine.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UrlRewritingNet.2.0.7\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
     </Reference>
     <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
@@ -289,6 +297,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Logs\UmbracoTraceLog.DESKTOP-EP15UG7.txt" />
+    <Content Include="App_Data\TEMP\ClientDependency\DESKTOP-EP15UG7-2066bd87991cb30492a7629b0f7aa3e3-map.xml" />
+    <Content Include="App_Data\TEMP\DistCache\DESKTOP-EP15UG7\LMW3SVC2ROOT-lastsynced.txt" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="Config\grid.editors.config.js" />
     <Content Include="Config\Lang\cs-CZ.user.xml" />
     <Content Include="Config\Lang\da-DK.user.xml" />
@@ -311,15 +325,13 @@
     <Content Include="default.aspx" />
     <Content Include="FacebookShareGateway.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="media\1344\img_6725.png" />
-    <Content Include="media\1344\img_6725_big-thumb.jpg" />
-    <Content Include="media\1344\img_6725_thumb.jpg" />
     <Content Include="Sources\css\bootstrap.css" />
     <Content Include="Sources\css\bootstrap.min.css" />
     <Content Include="Sources\css\clean-blog.css" />
     <Content Include="Sources\css\clean-blog.min.css" />
     <Content Include="Sources\css\Custom.css" />
     <Content Include="Sources\favicon.png" />
+    <Content Include="Sources\images.png" />
     <Content Include="Sources\js\bootstrap.js" />
     <Content Include="Sources\js\bootstrap.min.js" />
     <Content Include="Sources\js\clean-blog.js" />
@@ -327,7 +339,9 @@
     <Content Include="Sources\js\jquery.js" />
     <Content Include="Sources\js\jquery.min.js" />
     <Content Include="Sources\js\main.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -339,9 +353,6 @@
     </Compile>
     <Compile Include="FacebookShareGateway.aspx.designer.cs">
       <DependentUpon>FacebookShareGateway.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\MobileHelper.cs" />
     <Compile Include="Helpers\UmbracoContentHelper.cs" />
@@ -356,31 +367,9 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Config\UrlRewriting.config" />
-    <Content Include="Config\umbracoSettings.config" />
-    <Content Include="Config\trees.config" />
-    <Content Include="Config\tinyMceConfig.config" />
-    <Content Include="Config\scripting.config" />
-    <Content Include="Config\metablogConfig.config" />
-    <Content Include="Config\log4net.config" />
-    <Content Include="Config\FileSystemProviders.config" />
-    <Content Include="Config\feedProxy.config" />
     <Content Include="Config\ExamineSettings.config" />
     <Content Include="Config\ExamineIndex.config" />
-    <Content Include="Config\EmbeddedMedia.config" />
-    <Content Include="Config\Dashboard.config" />
-    <Content Include="Config\ClientDependency.config" />
-    <Content Include="Config\BaseRestExtensions.config" />
-    <Content Include="Config\applications.config" />
-    <Content Include="Config\404handlers.config" />
     <Content Include="Views\Article.cshtml" />
     <Content Include="Views\Category.cshtml" />
     <Content Include="Views\ComingSoon.cshtml" />
@@ -394,7 +383,42 @@
     <Content Include="Views\Partials\NotePreview.cshtml" />
     <Content Include="Views\Partials\Slider.cshtml" />
     <Content Include="Views\MacroPartials\Video.cshtml" />
+    <Content Include="Config\imageprocessor\cache.config" />
+    <Content Include="Config\imageprocessor\processing.config" />
+    <Content Include="Config\imageprocessor\security.config" />
+    <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="Config\ClientDependency.config" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.DESKTOP-EP15UG7.hash" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.DESKTOP-EP15UG7.list" />
+    <Content Include="App_Data\umbraco.config" />
+    <Content Include="Config\umbracoSettings.config" />
+    <Content Include="Config\trees.config" />
+    <Content Include="Config\tinyMceConfig.config" />
+    <Content Include="Config\scripting.config" />
+    <Content Include="Config\metablogConfig.config" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="Config\FileSystemProviders.config" />
+    <Content Include="Config\feedProxy.config" />
+    <Content Include="Config\EmbeddedMedia.config" />
+    <Content Include="Config\Dashboard.config" />
+    <Content Include="Config\BaseRestExtensions.config" />
+    <Content Include="Config\applications.config" />
+    <Content Include="Config\404handlers.config" />
     <None Include="Properties\PublishProfiles\mojopin filesystem.pubxml" />
+    <Content Include="Views\Note.cshtml" />
+    <Content Include="Views\Partials\Highlights.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -403,364 +427,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="media\1001\" />
-    <Folder Include="media\1002\" />
-    <Folder Include="media\1003\" />
-    <Folder Include="media\1004\" />
-    <Folder Include="media\1005\" />
-    <Folder Include="media\1006\" />
-    <Folder Include="media\1007\" />
-    <Folder Include="media\1008\" />
-    <Folder Include="media\1009\" />
-    <Folder Include="media\1010\" />
-    <Folder Include="media\1011\" />
-    <Folder Include="media\1012\" />
-    <Folder Include="media\1013\" />
-    <Folder Include="media\1014\" />
-    <Folder Include="media\1015\" />
-    <Folder Include="media\1016\" />
-    <Folder Include="media\1017\" />
-    <Folder Include="media\1018\" />
-    <Folder Include="media\1019\" />
-    <Folder Include="media\1020\" />
-    <Folder Include="media\1021\" />
-    <Folder Include="media\1022\" />
-    <Folder Include="media\1023\" />
-    <Folder Include="media\1024\" />
-    <Folder Include="media\1025\" />
-    <Folder Include="media\1026\" />
-    <Folder Include="media\1027\" />
-    <Folder Include="media\1028\" />
-    <Folder Include="media\1029\" />
-    <Folder Include="media\1030\" />
-    <Folder Include="media\1031\" />
-    <Folder Include="media\1032\" />
-    <Folder Include="media\1033\" />
-    <Folder Include="media\1034\" />
-    <Folder Include="media\1035\" />
-    <Folder Include="media\1036\" />
-    <Folder Include="media\1037\" />
-    <Folder Include="media\1038\" />
-    <Folder Include="media\1039\" />
-    <Folder Include="media\1040\" />
-    <Folder Include="media\1041\" />
-    <Folder Include="media\1042\" />
-    <Folder Include="media\1043\" />
-    <Folder Include="media\1044\" />
-    <Folder Include="media\1045\" />
-    <Folder Include="media\1046\" />
-    <Folder Include="media\1047\" />
-    <Folder Include="media\1048\" />
-    <Folder Include="media\1049\" />
-    <Folder Include="media\1050\" />
-    <Folder Include="media\1051\" />
-    <Folder Include="media\1052\" />
-    <Folder Include="media\1053\" />
-    <Folder Include="media\1054\" />
-    <Folder Include="media\1055\" />
-    <Folder Include="media\1056\" />
-    <Folder Include="media\1057\" />
-    <Folder Include="media\1058\" />
-    <Folder Include="media\1059\" />
-    <Folder Include="media\1060\" />
-    <Folder Include="media\1061\" />
-    <Folder Include="media\1062\" />
-    <Folder Include="media\1063\" />
-    <Folder Include="media\1064\" />
-    <Folder Include="media\1065\" />
-    <Folder Include="media\1066\" />
-    <Folder Include="media\1067\" />
-    <Folder Include="media\1068\" />
-    <Folder Include="media\1069\" />
-    <Folder Include="media\1070\" />
-    <Folder Include="media\1071\" />
-    <Folder Include="media\1072\" />
-    <Folder Include="media\1073\" />
-    <Folder Include="media\1074\" />
-    <Folder Include="media\1075\" />
-    <Folder Include="media\1076\" />
-    <Folder Include="media\1077\" />
-    <Folder Include="media\1078\" />
-    <Folder Include="media\1079\" />
-    <Folder Include="media\1080\" />
-    <Folder Include="media\1081\" />
-    <Folder Include="media\1082\" />
-    <Folder Include="media\1083\" />
-    <Folder Include="media\1084\" />
-    <Folder Include="media\1085\" />
-    <Folder Include="media\1086\" />
-    <Folder Include="media\1087\" />
-    <Folder Include="media\1088\" />
-    <Folder Include="media\1089\" />
-    <Folder Include="media\1090\" />
-    <Folder Include="media\1091\" />
-    <Folder Include="media\1092\" />
-    <Folder Include="media\1093\" />
-    <Folder Include="media\1094\" />
-    <Folder Include="media\1095\" />
-    <Folder Include="media\1096\" />
-    <Folder Include="media\1097\" />
-    <Folder Include="media\1098\" />
-    <Folder Include="media\1099\" />
-    <Folder Include="media\1100\" />
-    <Folder Include="media\1101\" />
-    <Folder Include="media\1102\" />
-    <Folder Include="media\1103\" />
-    <Folder Include="media\1104\" />
-    <Folder Include="media\1105\" />
-    <Folder Include="media\1106\" />
-    <Folder Include="media\1107\" />
-    <Folder Include="media\1108\" />
-    <Folder Include="media\1109\" />
-    <Folder Include="media\1110\" />
-    <Folder Include="media\1111\" />
-    <Folder Include="media\1112\" />
-    <Folder Include="media\1113\" />
-    <Folder Include="media\1114\" />
-    <Folder Include="media\1115\" />
-    <Folder Include="media\1116\" />
-    <Folder Include="media\1117\" />
-    <Folder Include="media\1118\" />
-    <Folder Include="media\1119\" />
-    <Folder Include="media\1120\" />
-    <Folder Include="media\1121\" />
-    <Folder Include="media\1122\" />
-    <Folder Include="media\1123\" />
-    <Folder Include="media\1124\" />
-    <Folder Include="media\1125\" />
-    <Folder Include="media\1126\" />
-    <Folder Include="media\1127\" />
-    <Folder Include="media\1128\" />
-    <Folder Include="media\1129\" />
-    <Folder Include="media\1130\" />
-    <Folder Include="media\1131\" />
-    <Folder Include="media\1132\" />
-    <Folder Include="media\1133\" />
-    <Folder Include="media\1134\" />
-    <Folder Include="media\1135\" />
-    <Folder Include="media\1136\" />
-    <Folder Include="media\1137\" />
-    <Folder Include="media\1138\" />
-    <Folder Include="media\1139\" />
-    <Folder Include="media\1140\" />
-    <Folder Include="media\1141\" />
-    <Folder Include="media\1142\" />
-    <Folder Include="media\1143\" />
-    <Folder Include="media\1144\" />
-    <Folder Include="media\1145\" />
-    <Folder Include="media\1146\" />
-    <Folder Include="media\1147\" />
-    <Folder Include="media\1148\" />
-    <Folder Include="media\1149\" />
-    <Folder Include="media\1150\" />
-    <Folder Include="media\1151\" />
-    <Folder Include="media\1152\" />
-    <Folder Include="media\1153\" />
-    <Folder Include="media\1154\" />
-    <Folder Include="media\1155\" />
-    <Folder Include="media\1156\" />
-    <Folder Include="media\1157\" />
-    <Folder Include="media\1158\" />
-    <Folder Include="media\1159\" />
-    <Folder Include="media\1160\" />
-    <Folder Include="media\1161\" />
-    <Folder Include="media\1162\" />
-    <Folder Include="media\1163\" />
-    <Folder Include="media\1164\" />
-    <Folder Include="media\1165\" />
-    <Folder Include="media\1166\" />
-    <Folder Include="media\1167\" />
-    <Folder Include="media\1168\" />
-    <Folder Include="media\1169\" />
-    <Folder Include="media\1170\" />
-    <Folder Include="media\1171\" />
-    <Folder Include="media\1172\" />
-    <Folder Include="media\1173\" />
-    <Folder Include="media\1174\" />
-    <Folder Include="media\1175\" />
-    <Folder Include="media\1176\" />
-    <Folder Include="media\1177\" />
-    <Folder Include="media\1178\" />
-    <Folder Include="media\1179\" />
-    <Folder Include="media\1180\" />
-    <Folder Include="media\1181\" />
-    <Folder Include="media\1182\" />
-    <Folder Include="media\1183\" />
-    <Folder Include="media\1184\" />
-    <Folder Include="media\1185\" />
-    <Folder Include="media\1186\" />
-    <Folder Include="media\1187\" />
-    <Folder Include="media\1188\" />
-    <Folder Include="media\1189\" />
-    <Folder Include="media\1190\" />
-    <Folder Include="media\1191\" />
-    <Folder Include="media\1192\" />
-    <Folder Include="media\1193\" />
-    <Folder Include="media\1194\" />
-    <Folder Include="media\1195\" />
-    <Folder Include="media\1196\" />
-    <Folder Include="media\1197\" />
-    <Folder Include="media\1198\" />
-    <Folder Include="media\1199\" />
-    <Folder Include="media\1200\" />
-    <Folder Include="media\1201\" />
-    <Folder Include="media\1202\" />
-    <Folder Include="media\1203\" />
-    <Folder Include="media\1204\" />
-    <Folder Include="media\1205\" />
-    <Folder Include="media\1206\" />
-    <Folder Include="media\1207\" />
-    <Folder Include="media\1208\" />
-    <Folder Include="media\1209\" />
-    <Folder Include="media\1210\" />
-    <Folder Include="media\1211\" />
-    <Folder Include="media\1212\" />
-    <Folder Include="media\1213\" />
-    <Folder Include="media\1214\" />
-    <Folder Include="media\1215\" />
-    <Folder Include="media\1216\" />
-    <Folder Include="media\1217\" />
-    <Folder Include="media\1218\" />
-    <Folder Include="media\1219\" />
-    <Folder Include="media\1220\" />
-    <Folder Include="media\1221\" />
-    <Folder Include="media\1222\" />
-    <Folder Include="media\1223\" />
-    <Folder Include="media\1224\" />
-    <Folder Include="media\1225\" />
-    <Folder Include="media\1226\" />
-    <Folder Include="media\1227\" />
-    <Folder Include="media\1228\" />
-    <Folder Include="media\1229\" />
-    <Folder Include="media\1230\" />
-    <Folder Include="media\1231\" />
-    <Folder Include="media\1232\" />
-    <Folder Include="media\1233\" />
-    <Folder Include="media\1234\" />
-    <Folder Include="media\1235\" />
-    <Folder Include="media\1236\" />
-    <Folder Include="media\1237\" />
-    <Folder Include="media\1238\" />
-    <Folder Include="media\1239\" />
-    <Folder Include="media\1240\" />
-    <Folder Include="media\1241\" />
-    <Folder Include="media\1242\" />
-    <Folder Include="media\1243\" />
-    <Folder Include="media\1244\" />
-    <Folder Include="media\1245\" />
-    <Folder Include="media\1246\" />
-    <Folder Include="media\1247\" />
-    <Folder Include="media\1248\" />
-    <Folder Include="media\1249\" />
-    <Folder Include="media\1250\" />
-    <Folder Include="media\1251\" />
-    <Folder Include="media\1252\" />
-    <Folder Include="media\1253\" />
-    <Folder Include="media\1254\" />
-    <Folder Include="media\1255\" />
-    <Folder Include="media\1256\" />
-    <Folder Include="media\1257\" />
-    <Folder Include="media\1258\" />
-    <Folder Include="media\1259\" />
-    <Folder Include="media\1260\" />
-    <Folder Include="media\1261\" />
-    <Folder Include="media\1262\" />
-    <Folder Include="media\1263\" />
-    <Folder Include="media\1264\" />
-    <Folder Include="media\1265\" />
-    <Folder Include="media\1266\" />
-    <Folder Include="media\1267\" />
-    <Folder Include="media\1268\" />
-    <Folder Include="media\1269\" />
-    <Folder Include="media\1270\" />
-    <Folder Include="media\1271\" />
-    <Folder Include="media\1272\" />
-    <Folder Include="media\1273\" />
-    <Folder Include="media\1274\" />
-    <Folder Include="media\1275\" />
-    <Folder Include="media\1276\" />
-    <Folder Include="media\1277\" />
-    <Folder Include="media\1278\" />
-    <Folder Include="media\1279\" />
-    <Folder Include="media\1280\" />
-    <Folder Include="media\1281\" />
-    <Folder Include="media\1282\" />
-    <Folder Include="media\1283\" />
-    <Folder Include="media\1284\" />
-    <Folder Include="media\1285\" />
-    <Folder Include="media\1286\" />
-    <Folder Include="media\1287\" />
-    <Folder Include="media\1288\" />
-    <Folder Include="media\1289\" />
-    <Folder Include="media\1290\" />
-    <Folder Include="media\1291\" />
-    <Folder Include="media\1292\" />
-    <Folder Include="media\1293\" />
-    <Folder Include="media\1294\" />
-    <Folder Include="media\1295\" />
-    <Folder Include="media\1296\" />
-    <Folder Include="media\1297\" />
-    <Folder Include="media\1298\" />
-    <Folder Include="media\1299\" />
-    <Folder Include="media\1300\" />
-    <Folder Include="media\1301\" />
-    <Folder Include="media\1302\" />
-    <Folder Include="media\1303\" />
-    <Folder Include="media\1304\" />
-    <Folder Include="media\1305\" />
-    <Folder Include="media\1306\" />
-    <Folder Include="media\1307\" />
-    <Folder Include="media\1308\" />
-    <Folder Include="media\1309\" />
-    <Folder Include="media\1310\" />
-    <Folder Include="media\1311\" />
-    <Folder Include="media\1312\" />
-    <Folder Include="media\1313\" />
-    <Folder Include="media\1314\" />
-    <Folder Include="media\1315\" />
-    <Folder Include="media\1316\" />
-    <Folder Include="media\1317\" />
-    <Folder Include="media\1318\" />
-    <Folder Include="media\1319\" />
-    <Folder Include="media\1320\" />
-    <Folder Include="media\1321\" />
-    <Folder Include="media\1322\" />
-    <Folder Include="media\1323\" />
-    <Folder Include="media\1324\" />
-    <Folder Include="media\1325\" />
-    <Folder Include="media\1326\" />
-    <Folder Include="media\1327\" />
-    <Folder Include="media\1328\" />
-    <Folder Include="media\1329\" />
-    <Folder Include="media\1330\" />
-    <Folder Include="media\1331\" />
-    <Folder Include="media\1332\" />
-    <Folder Include="media\1333\" />
-    <Folder Include="media\1334\" />
-    <Folder Include="media\1335\" />
-    <Folder Include="media\1336\" />
-    <Folder Include="media\1337\" />
-    <Folder Include="media\1338\" />
-    <Folder Include="media\1339\" />
-    <Folder Include="media\1340\" />
-    <Folder Include="media\1341\" />
-    <Folder Include="media\1342\" />
-    <Folder Include="media\1343\" />
-    <Folder Include="media\1345\" />
-    <Folder Include="media\1346\" />
-    <Folder Include="media\1347\" />
-    <Folder Include="media\1348\" />
-    <Folder Include="media\1349\" />
-    <Folder Include="media\1350\" />
-    <Folder Include="media\1351\" />
-    <Folder Include="media\1352\" />
-    <Folder Include="media\1353\" />
-    <Folder Include="media\1354\" />
-    <Folder Include="media\1355\" />
-    <Folder Include="media\1356\" />
-    <Folder Include="media\1357\" />
-    <Folder Include="media\1358\" />
+    <Folder Include="App_Data\cache\" />
+    <Folder Include="App_Data\ExamineIndexes\DESKTOP-EP15UG7\MySearch\Index\" />
+    <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\External\Index\" />
+    <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\InternalMember\Index\" />
+    <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\Internal\Index\" />
+    <Folder Include="App_Data\TEMP\FileUploads\" />
     <Folder Include="Sources\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -793,15 +470,16 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.7.3.4\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.3.4\build\UmbracoCms.props'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.7.3.4\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.3.4\build\UmbracoCms.targets'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.6.4\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.6.4\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.6.4\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.6.4\build\UmbracoCms.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
     <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
     <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
   </Target>
-  <Import Project="..\packages\UmbracoCms.7.3.4\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.3.4\build\UmbracoCms.targets')" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <Import Project="..\packages\UmbracoCms.7.6.4\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.6.4\build\UmbracoCms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
