@@ -3,28 +3,29 @@
 
 <div class="post-preview">
     <a href="@Model.Url">
-        <h2 class="post-title">
+        <h2 class="post-title newfont">
             @Model.Title
         </h2>
-        <h3 class="post-subtitle">
+        <h3 class="post-subtitle newfont">
             @Model.Subtitle
         </h3>
+
+        @if (!string.IsNullOrEmpty(Model.ThumbnailVideoUrl))
+        {
+            <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumbnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
+        }
+        else if (Model.ThumbnailImageUrl != null)
+        {
+            <img class="highlight-post" style="max-width: 100%" src="@Model.ThumbnailImageUrl)" />
+        }
     </a>
 
-    @if (!string.IsNullOrEmpty(Model.ThumbnailVideoUrl))
-    {
-        <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumbnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
-    }
-    else if (Model.ThumbnailImageUrl != null)
-    {
-        <img class="highlight" style="max-width: 100%" src="@Model.ThumbnailImageUrl" />
-    }
     <p class="post-meta" style="align-self: center; padding-top: 20px">
         @if (Node.GetCurrent().NodeTypeAlias.Equals("Homepage"))
             {
-            <a href="@Model.ParentUrl">@Model.ParentName</a>
+            <a class="newfont" href="@Model.ParentUrl">@Model.ParentName</a>
         }
-        <span>@Model.DateFormatted</span>
+        <span class="newfont">@Model.DateFormatted</span>
     </p>
     <hr>
 </div>

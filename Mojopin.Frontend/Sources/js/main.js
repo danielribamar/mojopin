@@ -40,15 +40,16 @@
         a.setAttribute('href', article.Url);
 
         var h2 = document.createElement("h2");
-        h2.className = 'post-title';
+        h2.className = 'post-title newfont';
         h2.innerHTML = article.Title;
 
         var h3 = document.createElement("h3");
-        h3.className = 'post-subtitle';
+        h3.className = 'post-subtitle newfont';
         h3.innerHTML = article.Subtitle;
 
         var img = document.createElement("img");
         img.setAttribute("src", article.ThumbnailImageUrl);
+        img.className = 'highlight';
         img.style.maxWidth = '100%';
 
         var video = document.createElement('iframe');
@@ -60,7 +61,7 @@
         video.setAttribute('src', 'https://www.youtube.com/embed/' + article.ThumbnailVideoUrl);
 
         var p = document.createElement('p');
-        p.className = 'post-meta';
+        p.className = 'post-meta newfont';
         p.style.alignSelf = 'center';
         p.style.paddingTop = '20px';
 
@@ -71,6 +72,7 @@
         var dateSpan = document.createElement('span');
         dateSpan.innerHTML = article.DateFormatted;
         dateSpan.style.paddingLeft = '10px';
+        dateSpan.className = 'newfont'
 
         var hr = document.createElement('hr');
 
@@ -105,10 +107,11 @@
         h2.innerHTML = article.Title;
 
         var span = document.createElement('span');
+        span.className = 'newfont';
         span.innerHTML = article.Description;
 
         var p = document.createElement('p');
-        p.className = 'post-meta';
+        p.className = 'post-meta newfont';
         p.style.alignSelf = 'center';
         p.style.paddingTop = '20px';
 
@@ -117,6 +120,7 @@
         pa.innerHTML = article.ParentName;
 
         var dateSpan = document.createElement('span');
+        dateSpan.className = 'newfont';
         dateSpan.innerHTML = article.DateFormatted;
         dateSpan.style.paddingLeft = '10px';
 

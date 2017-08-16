@@ -26,7 +26,7 @@
                     </h1>
                     @if (!string.IsNullOrEmpty(subtitle))
                     {
-                        <hr class="small" style="color: @titleColor">
+                        <hr class="small newfont" style="color: @titleColor">
                     }
                     <span class="subheading">@Html.Raw(subtitle)</span>
                     <br />
@@ -48,7 +48,13 @@
 
     @Html.Partial("Highlights", 
     Model.Content.GetPropertyValue<string>("highlightArticles").Split(',').ToList().Select(p=>umbracoHelper.TypedContent(p)).ToList())
+    <div class="row">
 
+        <div class="col-md-10 col-md-offset-1">
+   
+        <img src="~/Sources/separator.png" style="width:100%"/>
+        </div>
+    </div>
     @Html.Partial("ArticleList", items)
 
     @Html.Partial("InstagramFeed")

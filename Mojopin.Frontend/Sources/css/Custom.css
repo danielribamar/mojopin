@@ -25,9 +25,50 @@
 
 .highlight {
     border-top: 6px solid #fff;
+    opacity: 0.5;
 }
 
     .highlight:hover {
         border-top: 6px solid #deb887;
         cursor: pointer !important;
+        opacity: 1;
     }
+
+.highlight-post {
+    border-top: 6px solid #fff;
+    opacity: 0.8;
+}
+
+    .highlight-post:hover {
+        border-top: 6px solid #deb887;
+        cursor: pointer !important;
+        opacity: 1;
+        
+    }
+
+.newfont {
+    font-family: 'Quicksand', sans-serif !important;
+}
+@media screen and (min-width: 770px) {
+    .background-placeholder {
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0px;
+        z-index: 990;
+    }
+}
+
+
+.caroussel-image {
+    /*border-top: 6px solid #deb887;*/
+    filter: brightness(70%);
+    cursor: pointer !important;
+}
+    .caroussel-image hover {
+        filter: brightness(70%);
+        cursor: pointer !important;
+    }
+
+img {
+    cursor: pointer !important;
+}

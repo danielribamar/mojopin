@@ -331,6 +331,7 @@
     <Content Include="Sources\css\clean-blog.min.css" />
     <Content Include="Sources\css\Custom.css" />
     <Content Include="Sources\favicon.png" />
+    <Content Include="Sources\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Sources\images.png" />
     <Content Include="Sources\js\bootstrap.js" />
     <Content Include="Sources\js\bootstrap.min.js" />
@@ -339,6 +340,8 @@
     <Content Include="Sources\js\jquery.js" />
     <Content Include="Sources\js\jquery.min.js" />
     <Content Include="Sources\js\main.js" />
+    <Content Include="Sources\placeholder.png" />
+    <Content Include="Sources\separator.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -419,6 +422,10 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Sources\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Sources\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Sources\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Sources\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -433,7 +440,6 @@
     <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\InternalMember\Index\" />
     <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\Internal\Index\" />
     <Folder Include="App_Data\TEMP\FileUploads\" />
-    <Folder Include="Sources\fonts\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

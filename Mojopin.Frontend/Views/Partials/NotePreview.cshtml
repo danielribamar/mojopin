@@ -6,18 +6,17 @@
     var current = umbracoHelper.TypedContent(Model.NodeId);
 }
 <div class="note">
-    <a href="@Model.Url">
         <div class="post-preview text-center" style="padding-top:8px;">
             <h1 class="post-title " style="">
                 @Model.Title
 
             </h1>
-            @Html.Raw(Model.Description)
-
-            <p class="post-meta" style="align-self: center; padding-top: 20px">
+            <div class="newfont">
+                @Html.Raw(Model.Description)
+            </div>
+            <p class="post-meta newfont" style="align-self: center; padding-top: 20px">
                 @Model.DateFormatted
             </p>
             <hr>
         </div>
-    </a>
 </div>

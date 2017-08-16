@@ -15,22 +15,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 19:43:25</publishTime>
     </File>
     <File Include="App_Data/Logs/UmbracoTraceLog.DESKTOP-EP15UG7.txt">
-      <publishTime>02/08/2017 21:25:55</publishTime>
+      <publishTime>08/16/2017 03:19:59</publishTime>
     </File>
     <File Include="App_Data/TEMP/ClientDependency/DESKTOP-EP15UG7-2066bd87991cb30492a7629b0f7aa3e3-map.xml">
       <publishTime>08/02/2017 20:20:36</publishTime>
     </File>
     <File Include="App_Data/TEMP/DistCache/DESKTOP-EP15UG7/LMW3SVC2ROOT-lastsynced.txt">
-      <publishTime>02/08/2017 21:25:51</publishTime>
+      <publishTime>08/16/2017 01:43:01</publishTime>
     </File>
     <File Include="App_Data/TEMP/PluginCache/umbraco-plugins.DESKTOP-EP15UG7.hash">
-      <publishTime>02/08/2017 21:25:06</publishTime>
+      <publishTime>08/16/2017 03:15:43</publishTime>
     </File>
     <File Include="App_Data/TEMP/PluginCache/umbraco-plugins.DESKTOP-EP15UG7.list">
-      <publishTime>02/08/2017 21:25:35</publishTime>
+      <publishTime>08/16/2017 03:15:47</publishTime>
     </File>
     <File Include="App_Data/umbraco.config">
-      <publishTime>02/08/2017 21:25:55</publishTime>
+      <publishTime>08/16/2017 01:42:57</publishTime>
     </File>
     <File Include="App_Plugins/ModelsBuilder/modelsbuilder.controller.js">
       <publishTime>08/02/2017 19:54:22</publishTime>
@@ -72,16 +72,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="bin/AutoMapper.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/29/2015 09:57:28</publishTime>
     </File>
     <File Include="bin/AutoMapper.Net4.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/29/2015 09:57:28</publishTime>
     </File>
     <File Include="bin/AutoMapper.Net4.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/29/2015 09:57:28</publishTime>
     </File>
     <File Include="bin/AutoMapper.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/29/2015 09:57:28</publishTime>
     </File>
     <File Include="bin/businesslogic.dll">
       <publishTime>07/06/2017 20:21:38</publishTime>
@@ -108,25 +108,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2011 01:19:50</publishTime>
     </File>
     <File Include="bin/Examine.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 14:06:14</publishTime>
     </File>
     <File Include="bin/Examine.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 14:06:14</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/14/2016 11:01:16</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/14/2016 11:01:16</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>01/03/2011 14:16:38</publishTime>
     </File>
     <File Include="bin/ImageProcessor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/27/2017 17:56:12</publishTime>
     </File>
     <File Include="bin/ImageProcessor.Web.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/27/2017 17:59:22</publishTime>
     </File>
     <File Include="bin/interfaces.dll">
       <publishTime>07/06/2017 20:21:38</publishTime>
@@ -153,43 +153,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2015 17:07:22</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/14/2016 02:35:18</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeAnalysis.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:44</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/15/2015 02:06:24</publishTime>
     </File>
     <File Include="bin/Microsoft.IO.RecyclableMemoryStream.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/14/2016 15:31:26</publishTime>
     </File>
     <File Include="bin/Microsoft.IO.RecyclableMemoryStream.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/14/2016 15:31:26</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/13/2015 13:16:30</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/13/2015 13:16:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/13/2015 13:16:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/13/2015 13:16:36</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/13/2015 13:16:40</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Helpers.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:03:58</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MiniProfiler.dll">
       <publishTime>03/03/2013 22:46:22</publishTime>
@@ -198,64 +198,64 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/03/2013 22:46:22</publishTime>
     </File>
     <File Include="bin/Mojopin.Frontend.dll">
-      <publishTime>02/08/2017 21:26:08</publishTime>
+      <publishTime>08/16/2017 03:13:42</publishTime>
     </File>
     <File Include="bin/Mojopin.Frontend.pdb">
-      <publishTime>02/08/2017 21:26:08</publishTime>
+      <publishTime>08/16/2017 03:13:42</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/17/2016 18:29:10</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/02/2017 17:46:32</publishTime>
     </File>
     <File Include="bin/Owin.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>11/13/2012 12:19:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/Semver.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/14/2014 00:37:06</publishTime>
     </File>
     <File Include="bin/SQLCE4Umbraco.dll">
       <publishTime>07/06/2017 20:21:38</publishTime>
     </File>
     <File Include="bin/System.Collections.Immutable.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/System.Data.SqlServerCe.dll">
       <publishTime>07/06/2017 20:21:38</publishTime>
@@ -264,43 +264,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:38</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Extensions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/19/2015 20:10:46</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:02:42</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Primitives.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/19/2015 20:10:46</publishTime>
     </File>
     <File Include="bin/System.Reflection.Metadata.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/System.Threading.Tasks.Dataflow.dll">
       <publishTime>11/05/2016 04:57:20</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:02:54</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:03:46</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:02:18</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:02:32</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Deployment.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/TidyNet.dll">
       <publishTime>07/06/2017 20:21:38</publishTime>
@@ -336,13 +336,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:38</publishTime>
     </File>
     <File Include="bin/UrlRewritingNet.UrlRewriter.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/20/2016 11:07:04</publishTime>
     </File>
     <File Include="bin/WebMatrix.Data.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/WebMatrix.WebData.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:04:20</publishTime>
     </File>
     <File Include="bin/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -507,21 +507,36 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 20:28:20</publishTime>
     </File>
     <File Include="Sources/css/bootstrap.css">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>08/16/2017 02:33:49</publishTime>
     </File>
     <File Include="Sources/css/bootstrap.min.css">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>08/16/2017 02:35:24</publishTime>
     </File>
     <File Include="Sources/css/clean-blog.css">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>08/16/2017 01:38:58</publishTime>
     </File>
     <File Include="Sources/css/clean-blog.min.css">
       <publishTime>08/02/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/css/Custom.css">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>08/16/2017 03:01:36</publishTime>
     </File>
     <File Include="Sources/favicon.png">
+      <publishTime>08/02/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/02/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/02/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/02/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/02/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/glyphicons-halflings-regular.woff2">
       <publishTime>08/02/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/images.png">
@@ -546,7 +561,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 19:45:30</publishTime>
     </File>
     <File Include="Sources/js/main.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 01:05:33</publishTime>
+    </File>
+    <File Include="Sources/placeholder.png">
+      <publishTime>08/16/2017 02:00:50</publishTime>
+    </File>
+    <File Include="Sources/separator.png">
+      <publishTime>08/16/2017 03:12:26</publishTime>
     </File>
     <File Include="umbraco/Actions/delete.aspx">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -996,7 +1017,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/BrowseRepository.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/directoryBrowser.aspx">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -1005,22 +1026,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/installedPackage.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/installer.aspx">
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/LoadNitros.ascx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/proxy.htm">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/StarterKits.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Packages/SubmitPackage.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Developer/Python/editPython.aspx">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -2172,7 +2193,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Install/Legacy/loadStarterKits.ascx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:10</publishTime>
     </File>
     <File Include="umbraco/Install/Views/Index.cshtml">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -3927,10 +3948,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/layer/plugin.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/layer/plugin.min.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/legacyoutput/index.js">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -3963,7 +3984,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/media/moxieplayer.swf">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/media/plugin.js">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -4686,7 +4707,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Settings/Views/EditView.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/Translation/default.aspx">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -5094,7 +5115,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Views/dashboard/default/ourumbraco.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/Views/dashboard/default/StartupDashboardIntro.html">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -5112,7 +5133,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:46</publishTime>
     </File>
     <File Include="umbraco/Views/dashboard/default/umbracotv.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/16/2017 07:16:12</publishTime>
     </File>
     <File Include="umbraco/Views/dashboard/developer/developerdashboardintro.html">
       <publishTime>07/06/2017 20:21:46</publishTime>
@@ -8877,10 +8898,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 20:21:48</publishTime>
     </File>
     <File Include="Views/Article.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 00:53:48</publishTime>
     </File>
     <File Include="Views/Category.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 00:53:09</publishTime>
     </File>
     <File Include="Views/ComingSoon.cshtml">
       <publishTime>08/02/2017 19:45:30</publishTime>
@@ -8889,22 +8910,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Homepage.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 03:18:38</publishTime>
     </File>
     <File Include="Views/MacroPartials/Video.cshtml">
       <publishTime>08/02/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Master.cshtml">
-      <publishTime>08/02/2017 23:22:37</publishTime>
+      <publishTime>08/16/2017 00:24:04</publishTime>
     </File>
     <File Include="Views/Note.cshtml">
       <publishTime>08/02/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Partials/ArticleList.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 02:49:03</publishTime>
     </File>
     <File Include="Views/Partials/ArticlePreview.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 03:03:43</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap2-Fluid.cshtml">
       <publishTime>08/02/2017 20:28:09</publishTime>
@@ -8937,16 +8958,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/HeaderNavigation.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 00:38:10</publishTime>
     </File>
     <File Include="Views/Partials/Highlights.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 03:05:47</publishTime>
     </File>
     <File Include="Views/Partials/InstagramFeed.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 01:35:36</publishTime>
     </File>
     <File Include="Views/Partials/NotePreview.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/16/2017 03:04:21</publishTime>
     </File>
     <File Include="Views/Partials/Slider.cshtml">
       <publishTime>08/02/2017 19:45:30</publishTime>
