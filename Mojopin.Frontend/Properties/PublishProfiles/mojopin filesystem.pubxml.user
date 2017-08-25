@@ -15,22 +15,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/02/2017 19:43:25</publishTime>
     </File>
     <File Include="App_Data/Logs/UmbracoTraceLog.DESKTOP-EP15UG7.txt">
-      <publishTime>08/16/2017 03:19:59</publishTime>
+      <publishTime>08/17/2017 02:10:23</publishTime>
     </File>
     <File Include="App_Data/TEMP/ClientDependency/DESKTOP-EP15UG7-2066bd87991cb30492a7629b0f7aa3e3-map.xml">
       <publishTime>08/02/2017 20:20:36</publishTime>
     </File>
     <File Include="App_Data/TEMP/DistCache/DESKTOP-EP15UG7/LMW3SVC2ROOT-lastsynced.txt">
-      <publishTime>08/16/2017 01:43:01</publishTime>
+      <publishTime>08/17/2017 01:49:50</publishTime>
     </File>
     <File Include="App_Data/TEMP/PluginCache/umbraco-plugins.DESKTOP-EP15UG7.hash">
-      <publishTime>08/16/2017 03:15:43</publishTime>
+      <publishTime>08/17/2017 01:58:39</publishTime>
     </File>
     <File Include="App_Data/TEMP/PluginCache/umbraco-plugins.DESKTOP-EP15UG7.list">
-      <publishTime>08/16/2017 03:15:47</publishTime>
+      <publishTime>08/17/2017 01:58:42</publishTime>
     </File>
     <File Include="App_Data/umbraco.config">
-      <publishTime>08/16/2017 01:42:57</publishTime>
+      <publishTime>08/17/2017 01:49:54</publishTime>
     </File>
     <File Include="App_Plugins/ModelsBuilder/modelsbuilder.controller.js">
       <publishTime>08/02/2017 19:54:22</publishTime>
@@ -198,10 +198,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/03/2013 22:46:22</publishTime>
     </File>
     <File Include="bin/Mojopin.Frontend.dll">
-      <publishTime>08/16/2017 03:13:42</publishTime>
+      <publishTime>08/17/2017 02:13:35</publishTime>
     </File>
     <File Include="bin/Mojopin.Frontend.pdb">
-      <publishTime>08/16/2017 03:13:42</publishTime>
+      <publishTime>08/17/2017 02:13:35</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
       <publishTime>06/17/2016 18:29:10</publishTime>
@@ -510,58 +510,88 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2017 02:33:49</publishTime>
     </File>
     <File Include="Sources/css/bootstrap.min.css">
-      <publishTime>08/16/2017 02:35:24</publishTime>
+      <publishTime>08/17/2017 02:00:48</publishTime>
     </File>
     <File Include="Sources/css/clean-blog.css">
       <publishTime>08/16/2017 01:38:58</publishTime>
     </File>
     <File Include="Sources/css/clean-blog.min.css">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>08/17/2017 02:31:12</publishTime>
     </File>
     <File Include="Sources/css/Custom.css">
-      <publishTime>08/16/2017 03:01:36</publishTime>
+      <publishTime>08/16/2017 09:05:19</publishTime>
+    </File>
+    <File Include="Sources/css/Custom.min.css">
+      <publishTime>08/17/2017 01:21:28</publishTime>
+    </File>
+    <File Include="Sources/css/font-awesome.min.css">
+      <publishTime>08/17/2017 01:35:08</publishTime>
     </File>
     <File Include="Sources/favicon.png">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
+    </File>
+    <File Include="Sources/fonts/fontawesome-webfont.eot">
+      <publishTime>08/17/2017 01:39:02</publishTime>
+    </File>
+    <File Include="Sources/fonts/fontawesome-webfont.svg">
+      <publishTime>08/17/2017 01:39:02</publishTime>
+    </File>
+    <File Include="Sources/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/17/2017 01:39:02</publishTime>
+    </File>
+    <File Include="Sources/fonts/fontawesome-webfont.woff">
+      <publishTime>08/17/2017 01:39:02</publishTime>
+    </File>
+    <File Include="Sources/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/17/2017 01:39:02</publishTime>
+    </File>
+    <File Include="Sources/fonts/FontAwesome.otf">
+      <publishTime>08/17/2017 01:39:02</publishTime>
     </File>
     <File Include="Sources/fonts/glyphicons-halflings-regular.eot">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/fonts/glyphicons-halflings-regular.svg">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/fonts/glyphicons-halflings-regular.woff">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/fonts/glyphicons-halflings-regular.woff2">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/images.png">
-      <publishTime>08/02/2017 19:45:29</publishTime>
+      <publishTime>02/08/2017 19:45:29</publishTime>
     </File>
     <File Include="Sources/js/bootstrap.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Sources/js/bootstrap.min.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/17/2017 02:01:03</publishTime>
     </File>
     <File Include="Sources/js/clean-blog.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Sources/js/clean-blog.min.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
+    </File>
+    <File Include="Sources/js/jquery-3.2.1.min.js">
+      <publishTime>08/17/2017 01:10:28</publishTime>
     </File>
     <File Include="Sources/js/jquery.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Sources/js/jquery.min.js">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Sources/js/main.js">
       <publishTime>08/16/2017 01:05:33</publishTime>
+    </File>
+    <File Include="Sources/js/main.min.js">
+      <publishTime>08/17/2017 01:21:41</publishTime>
     </File>
     <File Include="Sources/placeholder.png">
       <publishTime>08/16/2017 02:00:50</publishTime>
@@ -8901,88 +8931,88 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2017 00:53:48</publishTime>
     </File>
     <File Include="Views/Category.cshtml">
-      <publishTime>08/16/2017 00:53:09</publishTime>
+      <publishTime>08/17/2017 02:13:09</publishTime>
     </File>
     <File Include="Views/ComingSoon.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/HeaderAndFooter.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>08/17/2017 01:47:27</publishTime>
     </File>
     <File Include="Views/Homepage.cshtml">
-      <publishTime>08/16/2017 03:18:38</publishTime>
+      <publishTime>08/17/2017 02:13:19</publishTime>
     </File>
     <File Include="Views/MacroPartials/Video.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Master.cshtml">
-      <publishTime>08/16/2017 00:24:04</publishTime>
+      <publishTime>08/17/2017 02:17:41</publishTime>
     </File>
     <File Include="Views/Note.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Partials/ArticleList.cshtml">
       <publishTime>08/16/2017 02:49:03</publishTime>
     </File>
     <File Include="Views/Partials/ArticlePreview.cshtml">
-      <publishTime>08/16/2017 03:03:43</publishTime>
+      <publishTime>08/16/2017 03:22:58</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap2-Fluid.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap2.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap3-Fluid.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap3.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Base.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Embed.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Macro.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Media.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Rte.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Editors/Textstring.cshtml">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/Partials/HeaderNavigation.cshtml">
       <publishTime>08/16/2017 00:38:10</publishTime>
     </File>
     <File Include="Views/Partials/Highlights.cshtml">
-      <publishTime>08/16/2017 03:05:47</publishTime>
+      <publishTime>08/17/2017 02:13:15</publishTime>
     </File>
     <File Include="Views/Partials/InstagramFeed.cshtml">
       <publishTime>08/16/2017 01:35:36</publishTime>
     </File>
     <File Include="Views/Partials/NotePreview.cshtml">
-      <publishTime>08/16/2017 03:04:21</publishTime>
+      <publishTime>08/16/2017 08:44:43</publishTime>
     </File>
     <File Include="Views/Partials/Slider.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Views/web.config">
-      <publishTime>08/02/2017 20:28:09</publishTime>
+      <publishTime>02/08/2017 20:28:09</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>08/02/2017 19:45:30</publishTime>
+      <publishTime>02/08/2017 19:45:30</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/02/2017 21:09:28</publishTime>
+      <publishTime>08/17/2017 01:52:55</publishTime>
     </File>
   </ItemGroup>
 </Project>

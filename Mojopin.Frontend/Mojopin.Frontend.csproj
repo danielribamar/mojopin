@@ -328,9 +328,16 @@
     <Content Include="Sources\css\bootstrap.css" />
     <Content Include="Sources\css\bootstrap.min.css" />
     <Content Include="Sources\css\clean-blog.css" />
-    <Content Include="Sources\css\clean-blog.min.css" />
+    <Content Include="Sources\css\clean-blog.min.css">
+      <DependentUpon>clean-blog.css</DependentUpon>
+    </Content>
     <Content Include="Sources\css\Custom.css" />
+    <Content Include="Sources\css\Custom.min.css">
+      <DependentUpon>Custom.css</DependentUpon>
+    </Content>
+    <Content Include="Sources\css\font-awesome.min.css" />
     <Content Include="Sources\favicon.png" />
+    <Content Include="Sources\fonts\fontawesome-webfont.svg" />
     <Content Include="Sources\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Sources\images.png" />
     <Content Include="Sources\js\bootstrap.js" />
@@ -340,6 +347,9 @@
     <Content Include="Sources\js\jquery.js" />
     <Content Include="Sources\js\jquery.min.js" />
     <Content Include="Sources\js\main.js" />
+    <Content Include="Sources\js\main.min.js">
+      <DependentUpon>main.js</DependentUpon>
+    </Content>
     <Content Include="Sources\placeholder.png" />
     <Content Include="Sources\separator.png" />
     <Content Include="Web.config">
@@ -407,6 +417,7 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\mojopin filesystem.pubxml" />
     <Content Include="Views\Note.cshtml" />
     <Content Include="Views\Partials\Highlights.cshtml" />
@@ -426,6 +437,12 @@
     <Content Include="Sources\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Sources\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Sources\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Sources\js\jquery-3.2.1.min.js" />
+    <Content Include="Sources\fonts\fontawesome-webfont.eot" />
+    <Content Include="Sources\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Sources\fonts\fontawesome-webfont.woff" />
+    <Content Include="Sources\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Sources\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -440,6 +457,7 @@
     <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\InternalMember\Index\" />
     <Folder Include="App_Data\TEMP\ExamineIndexes\DESKTOP-EP15UG7\Internal\Index\" />
     <Folder Include="App_Data\TEMP\FileUploads\" />
+    <Folder Include="media\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

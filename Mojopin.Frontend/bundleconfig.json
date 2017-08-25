@@ -1,0 +1,20 @@
+[
+  {
+    "outputFileName": "Sources/css/clean-blog.min.css",
+    "inputFiles": [
+      "Sources/css/clean-blog.css"
+    ]
+  },
+  {
+    "outputFileName": "Sources/css/Custom.min.css",
+    "inputFiles": [
+      "Sources/css/Custom.css"
+    ]
+  },
+  {
+    "outputFileName": "Sources/js/main.min.js",
+    "inputFiles": [
+      "Sources/js/main.js"
+    ]
+  }
+]

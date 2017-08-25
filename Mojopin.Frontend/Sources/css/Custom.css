@@ -4,28 +4,27 @@
 .Img-Responsive {
     max-width: 100%;
 }
+
 .note a:hover {
     text-decoration: none;
-  
 }
+
     .note a:hover h1 {
         font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;
         color: #deb887;
-        
-        
-    }
-    .note a:hover div {
-    
     }
 
-.note a h1{
+    .note a:hover div {
+    }
+
+.note a h1 {
     font: 200 50px/0.8 'Great Vibes', Helvetica, sans-serif;
     color: #deb887
 }
 
 .highlight {
     border-top: 6px solid #fff;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
     .highlight:hover {
@@ -34,25 +33,30 @@
         opacity: 1;
     }
 
+.post-link:hover .highlight-post {
+    border-top: 6px solid #deb887;
+    opacity: 1;
+}
+
 .highlight-post {
     border-top: 6px solid #fff;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
     .highlight-post:hover {
         border-top: 6px solid #deb887;
         cursor: pointer !important;
         opacity: 1;
-        
     }
 
 .newfont {
     font-family: 'Quicksand', sans-serif !important;
 }
+
 @media screen and (min-width: 770px) {
     .background-placeholder {
         background: rgba(0, 0, 0, 0.4);
-        position: fixed;
+        /*position: fixed;*/
         top: 0px;
         z-index: 990;
     }
@@ -64,6 +68,7 @@
     filter: brightness(70%);
     cursor: pointer !important;
 }
+
     .caroussel-image hover {
         filter: brightness(70%);
         cursor: pointer !important;
@@ -71,4 +76,19 @@
 
 img {
     cursor: pointer !important;
+}
+
+.note-preview {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-stretch: normal;
+    font-size: 50px;
+    line-height: 0.8;
+    font-family: "Great Vibes", Helvetica, sans-serif;
+    color: rgb(222, 184, 135);
+}
+
+no-pointer {
+    cursor: default !important;
 }

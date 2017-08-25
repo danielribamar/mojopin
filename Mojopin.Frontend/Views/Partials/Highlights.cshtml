@@ -6,7 +6,7 @@
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <h2 class="post-preview newfont">Posts em destaque...</h2>
+        <h2 class="post-preview newfont">Posts em destaque</h2>
         <div id="myCarousel" class="carousel slide" style="border-top: 6px solid #deb887;" data-ride="carousel">
             <!-- Indicators -->
 
@@ -27,7 +27,7 @@
 
                     <div class="item @(highlight.Id==Model.First().Id?"active":"" )">
                         <a href="@highlight.Url">
-                            <img class="caroussel-image" src="@media.GetCropUrl(1200,500,imageCropMode:Umbraco.Web.Models.ImageCropMode.Crop,imageCropAnchor:Umbraco.Web.Models.ImageCropAnchor.Center)" alt="Los Angeles">
+                            <img class="caroussel-image" src="@media.GetCropUrl(1200,500, quality: 30,imageCropMode:Umbraco.Web.Models.ImageCropMode.Crop,imageCropAnchor:Umbraco.Web.Models.ImageCropAnchor.Center)" alt="Los Angeles">
                             <div class="carousel-caption">
                                 <h3 class="newfont">@highlight.GetPropertyValue("contentTitle")</h3>
                                 @*<p>The atmosphere in Chania has a touch of Florence and Venice.</p>*@

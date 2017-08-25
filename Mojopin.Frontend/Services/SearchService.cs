@@ -78,7 +78,7 @@ namespace Mojopin.Frontend.Services
                 {
                     item.ThumbnailImageUrl = string.Format("{0}&bgcolor=FFF", contentThumbnail
                .GetCropUrl(1280, 768,
-               quality: 100,
+               quality: 30,
                imageCropAnchor: Umbraco.Web.Models.ImageCropAnchor.Center,
                imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop
                ));

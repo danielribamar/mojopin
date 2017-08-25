@@ -10,7 +10,7 @@
     var searchService = new SearchService();
     var items = searchService.FeedSearch(1, 5, Model.Content.Id);
 
-    var background = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url();
+    var background = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(quality: 30);
 }
 <header class="intro-header" style="background-image: url('@background'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
     <div class="container">

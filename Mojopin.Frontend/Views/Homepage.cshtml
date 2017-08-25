@@ -3,16 +3,16 @@
 @using Mojopin.Frontend.Services
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-    Layout = "HeaderAndFooter.cshtml";
-    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
-    var title = Model.Content.GetPropertyValue("contentTitle");
-    var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
-    var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
-    var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).Url;
+            Layout = "HeaderAndFooter.cshtml";
+            var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+            var title = Model.Content.GetPropertyValue("contentTitle");
+            var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
+            var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
+            var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(quality: 30);
 
-    var searchService = new SearchService();
-    var items = searchService.FeedSearch(1, 5);
-}
+            var searchService = new SearchService();
+            var items = searchService.FeedSearch(1, 5);
+        }
 <header class="intro-header" style="background-image: url('@media'); background-color: #@Model.Content.GetPropertyValue("contentHeaderColor")">
     <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@
                         </span>
                     </h1>
                     @if (!string.IsNullOrEmpty(subtitle))
-                    {
+        {
                         <hr class="small newfont" style="color: @titleColor">
                     }
                     <span class="subheading">@Html.Raw(subtitle)</span>
@@ -38,7 +38,7 @@
 </header>
 
 @if (!MobileHelper.IsMobileDevice(Request.UserAgent))
-{
+    {
     @*<div style="width: 15%; float: right; margin-left: 20px; margin-right: 10px; position: fixed; padding-top: 35px;z-index: -1">
         <div class="fb-page" data-href="https://www.facebook.com/filipagalrao" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/filipagalrao"><a href="https://www.facebook.com/filipagalrao">loading...</a></blockquote></div></div>
     </div>*@
@@ -52,7 +52,7 @@
 
         <div class="col-md-10 col-md-offset-1">
    
-        <img src="~/Sources/separator.png" style="width:100%"/>
+        <img src="~/Sources/separator.png" style="width:100%;cursor:default !important;"/>
         </div>
     </div>
     @Html.Partial("ArticleList", items)
