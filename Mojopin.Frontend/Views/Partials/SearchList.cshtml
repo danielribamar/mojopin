@@ -1,0 +1,20 @@
+﻿@using Umbraco.Web.Models
+@using Mojopin.Frontend.Services;
+@model IEnumerable<Mojopin.Frontend.Models.ItemPreview>
+@{
+    var currentNode = uQuery.GetCurrentNode();
+    var category = currentNode.NodeTypeAlias.Equals("Category") ? currentNode.Id : 0;
+}
+<div class="row">
+    <div id="feed" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+        @foreach (var item in Model)
+        {
+            @Html.Partial("SearchItemPreview", item)
+            
+        }
+        <!-- Pager -->
+
+    </div>
+   
+</div>

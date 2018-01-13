@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -336,6 +337,7 @@
       <DependentUpon>Custom.css</DependentUpon>
     </Content>
     <Content Include="Sources\css\font-awesome.min.css" />
+    <Content Include="Sources\css\search.css" />
     <Content Include="Sources\favicon.png" />
     <Content Include="Sources\fonts\fontawesome-webfont.svg" />
     <Content Include="Sources\fonts\glyphicons-halflings-regular.svg" />
@@ -350,6 +352,7 @@
     <Content Include="Sources\js\main.min.js">
       <DependentUpon>main.js</DependentUpon>
     </Content>
+    <Content Include="Sources\js\search.js" />
     <Content Include="Sources\placeholder.png" />
     <Content Include="Sources\separator.png" />
     <Content Include="Web.config">
@@ -374,6 +377,7 @@
     <Compile Include="Models\RelatedLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\InstagramService.cs" />
+    <Compile Include="Services\NotificationService.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="UmbracoEvents.cs" />
   </ItemGroup>
@@ -443,6 +447,9 @@
     <Content Include="Sources\fonts\fontawesome-webfont.woff" />
     <Content Include="Sources\fonts\fontawesome-webfont.woff2" />
     <Content Include="Sources\fonts\FontAwesome.otf" />
+    <Content Include="Views\Search.cshtml" />
+    <Content Include="Views\Partials\SearchList.cshtml" />
+    <Content Include="Views\Partials\SearchItemPreview.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

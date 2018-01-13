@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Threading.Tasks;
 using Umbraco.Core.Models;
 using Umbraco.Web;
 
@@ -13,7 +14,7 @@ namespace Mojopin.Frontend.Services
     {
         private UmbracoHelper umbracoHelper = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
 
-        public List<ItemPreview> FeedSearch(int page, int numberOfItems, int categoryId = 0)
+        public List<ItemPreview> FeedSearch(int page, int numberOfItems, int categoryId = 0, string term = "")
         {
             var results = new List<ItemPreview>();
 
@@ -22,14 +23,22 @@ namespace Mojopin.Frontend.Services
 
             var searchCriteria = Searcher.CreateSearchCriteria();
             var searchFields = new[] { "nodeTypeAlias" };
+            if (!string.IsNullOrEmpty(term))
+            {
+                searchFields = new[] { "contentTitle", "contentSubtitle", "contentDescription" };
+            }
             var searchTerms = new[] { "article", "note" };
+            if (!string.IsNullOrEmpty(term))
+            {
+                searchTerms = new[] { term };
+            }
+
             var query = searchCriteria.GroupedOr(searchFields, searchTerms.ToArray()).Compile();
             var searchResults = Searcher.Search(query);
             //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
             //Printing the results
             foreach (var item in searchResults.Select(p => umbracoHelper.TypedContent(p.Id)).OrderByDescending(p => p.CreateDate).ToList())
             {
-
                 switch (item.DocumentTypeAlias)
                 {
                     case "Note":
@@ -42,7 +51,36 @@ namespace Mojopin.Frontend.Services
                         break;
                 }
             }
-            return results.Skip(numberOfItems * (page - 1)).Take(numberOfItems).ToList();
+            if (numberOfItems != 0)
+            {
+                return results.Skip(numberOfItems * (page - 1)).Take(numberOfItems).ToList();
+            }
+            return results;
+        }
+
+        internal List<ItemPreview> Search(string keyword)
+        {
+
+            var results = new List<ItemPreview>();
+
+            //Fetching our SearchProvider by giving it the name of our searchprovider
+            var Searcher = Examine.ExamineManager.Instance.SearchProviderCollection["MySearchSearcher"];
+
+            var searchCriteria = Searcher.CreateSearchCriteria();
+            var searchFields = new[] { "nodeTypeAlias", };
+            var searchTerms = new[] { "article", "note" };
+            var query = searchCriteria.GroupedOr(searchFields, searchTerms.ToArray()).Compile();
+            var searchResults = Searcher.Search(query);
+            //Searching and ordering the result by score, and we only want to get the results that has a minimum of 0.05(scale is up to 1.)
+            //Printing the results
+            foreach (var item in searchResults.Select(p => umbracoHelper.TypedContent(p.Id)).OrderByDescending(p => p.CreateDate).ToList())
+            {
+                var itemPreview = ConvertToItem(item);
+
+                results.Add(itemPreview);
+            }
+            return results;
+
         }
 
         private ItemPreview ConvertToItem(IPublishedContent result)

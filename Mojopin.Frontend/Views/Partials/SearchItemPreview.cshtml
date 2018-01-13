@@ -1,0 +1,36 @@
+﻿@model Mojopin.Frontend.Models.ItemPreview
+@using umbraco.NodeFactory
+
+<div class="post-preview">
+    <div class="row">
+        <div class="col-md-4">
+            @if (!string.IsNullOrEmpty(Model.ThumbnailVideoUrl))
+            {
+                <iframe style="max-width: 100%; width: 100%; height: 400px;" src="https://www.youtube.com/embed/@Model.ThumbnailVideoUrl" frameborder="0" allowfullscreen="0"></iframe>
+            }
+            else if (Model.ThumbnailImageUrl != null)
+            {
+                <img class="highlight-post" style="max-width: 100%" src="@Model.ThumbnailImageUrl)" />
+            }
+        </div>
+        <div class="col-md-8">
+            <a class="post-link" href="@Model.Url">
+                <h2 class="post-title newfont">
+                    @Model.Title
+                </h2>
+                <h3 class="post-subtitle newfont">
+                    @Model.Subtitle
+                </h3>
+            </a>
+
+            <p class="post-meta" style="align-self: center">
+
+                <a class="newfont" href="@Model.ParentUrl">@Model.ParentName</a>
+
+                <span class="newfont">@Model.DateFormatted</span>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+</div>
