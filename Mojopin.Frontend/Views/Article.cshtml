@@ -6,9 +6,22 @@
 
     var date = Model.Content.GetPropertyValue<DateTime>("contentDate");
 
-    var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage"));
+    string background = "";
+    if (Model.Content.HasValue("contentHeaderImage"))
+    {
+        var media = Umbraco.TypedMedia(Model.Content.GetPropertyValue<int>("contentHeaderImage"));
+        if (media != null)
+        {
+            background = media.GetCropUrl(1366, 768, imageCropMode: ImageCropMode.Crop);
+        }
+        else
+        {
+            var homepage = Umbraco.TypedContentAtRoot().First().Children.First(p => p.DocumentTypeAlias.Equals("Homepage"));
 
-    var background = media.GetCropUrl(1366, 768, imageCropMode: ImageCropMode.Crop);
+             background = Umbraco.TypedMedia(homepage.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(quality: 30);
+
+        }
+    }
 
     var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
 }
@@ -26,7 +39,7 @@
 <!-- Post Content -->
 <article>
     <div class="container">
-       
+
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 newfont">
                 <div class="post-heading">
@@ -40,8 +53,8 @@
                 </div>
                 <hr />
                 @Html.Raw(Model.Content.GetPropertyValue<string>("contentDescription")
-               .Replace("<img", "<img style='max-width:100%'")
-               .Replace("<iframe", "<iframe style='max-width:100%'"))
+                                             .Replace("<img", "<img style='max-width:100%'")
+                                             .Replace("<iframe", "<iframe style='max-width:100%'"))
             </div>
 
             <div id="disqus_thread"></div>

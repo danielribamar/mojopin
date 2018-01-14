@@ -1,7 +1,43 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿
+@using MojoPin.Frontend.Helpers
+@using Umbraco.Web.Models
+@using Mojopin.Frontend.Services
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
+    var homepage = Umbraco.TypedContentAtRoot().First().Children.First(p => p.DocumentTypeAlias.Equals("Homepage"));
     Layout = "HeaderAndFooter.cshtml";
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+    var title = Model.Content.GetPropertyValue("contentTitle");
+    var subtitle = Model.Content.GetPropertyValue<string>("contentSubtitle");
+    var titleColor = Model.Content.GetPropertyValue("contentTitleColor");
+    var media = Umbraco.TypedMedia(homepage.GetPropertyValue<int>("contentHeaderImage")).GetCropUrl(quality: 30);
+
+    var searchService = new SearchService();
+    var items = searchService.FeedSearch(1, 5);
 }
+<header class="intro-header" style="background-image: url('@media'); background-color: #@homepage.GetPropertyValue("contentHeaderColor")">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1 class="title" style="color: @titleColor">
+                        @title
+                        <span style="font: 100 20px/0.8 'Great Vibes', Helvetica, sans-serif; color: @titleColor">
+                            by Filipa Galrão
+                        </span>
+                    </h1>
+                    @if (!string.IsNullOrEmpty(subtitle))
+                    {
+                        <hr class="small newfont" style="color: @titleColor">
+                    }
+                    <span class="subheading">@Html.Raw(subtitle)</span>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="row" style="padding-top:20px;">
     <div class="col-md-2"></div>
     <div class="col-md-8 text-center">
